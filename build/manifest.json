@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Plumb",
+  "description": "A dev tool to do things!",
+  "version": "0.0.0.1",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Plumb",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["content.js"]
+    }
+  ]
+}
